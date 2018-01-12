@@ -1,0 +1,15 @@
+"D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armproc.dll" 
+
+"D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armjlink2.dll" 
+
+"F:\2017---工作项目资料\小车驱动板 for Patient Cart\软件系统资料\小车控制系统设计\小车控制系统设计\PatientCart V02\IarDemo-F4XG\IarDemo-F4XG\IarDemoF4XG-User\OS3\IAR\Debug\Exe\IarDemo-F4XG.out" 
+
+--plugin "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armbat.dll" 
+
+--device_macro "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\config\debugger\ST\STM32F4xx.dmac" 
+
+--flash_loader "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\config\flashloader\ST\FlashSTM32F4xxx.board" 
+
+
+
+
