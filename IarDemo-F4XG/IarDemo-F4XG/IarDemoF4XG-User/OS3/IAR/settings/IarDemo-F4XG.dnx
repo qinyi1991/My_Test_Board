@@ -16,7 +16,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </JLinkDriver>
     <DebugChecksum>
-        <Checksum>812431844</Checksum>
+        <Checksum>2265517739</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -111,12 +111,6 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints2>
-        <Count>0</Count>
-    </Breakpoints2>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -126,19 +120,6 @@
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
     </TermIOLog>
-    <Aliases>
-        <A0>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-CPU\ARM-Cortex-M4\IAR\cpu_c.c" ""</A0>
-        <A1>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-CPU\cpu_core.c" ""</A1>
-        <A2>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-LIB\lib_mem.c" ""</A2>
-        <A3>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-LIB\lib_str.c" ""</A3>
-        <A4>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_core.c" ""</A4>
-        <A5>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_flag.c" ""</A5>
-        <A6>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_mem.c" ""</A6>
-        <A7>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_msg.c" ""</A7>
-        <A8>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_prio.c" ""</A8>
-        <Count>9</Count>
-        <SuppressDialog>0</SuppressDialog>
-    </Aliases>
     <DriverProfiling>
         <Enabled>0</Enabled>
         <Mode>1</Mode>
@@ -157,4 +138,23 @@
         <Probe0>I0</Probe0>
         <ProbeSetup0>2 1 1 2 0 0</ProbeSetup0>
     </PowerProbe>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints2>
+        <Count>0</Count>
+    </Breakpoints2>
+    <Aliases>
+        <A0>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-CPU\ARM-Cortex-M4\IAR\cpu_c.c" ""</A0>
+        <A1>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-CPU\cpu_core.c" ""</A1>
+        <A2>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-LIB\lib_mem.c" ""</A2>
+        <A3>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uC-LIB\lib_str.c" ""</A3>
+        <A4>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_core.c" ""</A4>
+        <A5>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_flag.c" ""</A5>
+        <A6>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_mem.c" ""</A6>
+        <A7>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_msg.c" ""</A7>
+        <A8>_ "F:\2017---工作项目资料\PatientCart\IarDemo-F4XG\Software\uCOS-III\Source\os_prio.c" ""</A8>
+        <Count>9</Count>
+        <SuppressDialog>0</SuppressDialog>
+    </Aliases>
 </settings>

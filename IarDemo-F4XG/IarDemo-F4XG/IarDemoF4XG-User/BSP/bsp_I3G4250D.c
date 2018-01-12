@@ -39,29 +39,63 @@
 #define INT1_THS_ZL_r                  0x37
 #define INT1_DURATION_r                0x38
 
-#define  BSP_SPI2_CS   PBout(12)
+//片选区
+#define  BSP_SPI2_CS   PHout(12)
 
-//void SPIInput(uint16_t Tdata)
+//写命令
+#define  WR_DEVICE  0x8000        //Write:0, Read:1
+//地址保持
+#define  DEVICE_MS_ADDR  0x4000   //In multi hold:0, increase:1
+//FIFO操作
+ 
+
+//void SPIWriteWord(uint16_t Tdata)
 void Inital_BSP_I3G4250D(void)
 {
-    //使用FIFO的读取方式
-       
-  
-  
-}
-
-
-void Write_Command(uint8_t *data)
-{
+    static  uint16_t Ack_data;
+    BSP_SPI2_CS=0;
+    //输出带宽
+    Write_Command_To_Device(0x88,0x20,&Ack_data); 
+    if(Ack_data == 0x88)
+    {
    
-  
+    }
+    
+    
+    
   
 }
 
 
-void Read_Data(uint16_t *ptr_data)
+//单次写
+void Write_Command_To_Device(uint8_t Re_Data,uint8_t Addr,uint16_t* Receive_data)
+{
+    uint16_t Temp_Data=0;
+
+    Temp_Data = (uint16_t)(Re_Data)|((uint16_t)Addr<<8);
+    *Receive_data = SPIWriteWord( Temp_Data);
+
+    
+}
+
+//单次读
+void Read_Data_From_Device(uint8_t Addr,uint16_t* Receive_data)
+{
+    uint16_t Temp_Data=0;
+    Temp_Data = WR_DEVICE|((uint16_t)Addr<<8);
+    *Receive_data = SPIWriteWord( Temp_Data);
+}
+
+//混合读
+void Multiple_Read_Datas(uint8_t* Ptr_Data,uint8_t Addr)
 {
   
   
 }
 
+//混合写
+void Multiple_Write_Datas(uint8_t* Ptr_Data,uint8_t Addr)
+{
+  
+  
+}

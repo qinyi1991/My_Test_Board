@@ -59,6 +59,8 @@
 #include "bsp_DACoutput.h"
 #include "bsp_EncoderScan.h"
 #include "DataScope_DP.h"
+#include "bsp_SPIbus.h"
+#include  "bsp_I3G4250D.h"
 
 Fixture_Status_Flag AppTask_Fixture_Status;
 extern uint32_t DACCH1_DAT,DACCH2_DAT;
@@ -438,6 +440,7 @@ static  void  AppTaskRFIDCardHandling (void  *p_arg)
     CPU_INT16S   *Ptr_RegData=RegData;
     CPU_INT32U   *ptr_data='\0';
     Encoder_left_Var=0; 
+    Inital_BSP_I3G4250D();
     while (DEF_TRUE) {
               PrintStringsToScreen(Ptr_RegData+NRegisAdd201,RFID_Buf,10);
               
@@ -460,6 +463,8 @@ static  void  AppTaskRFIDCardHandling (void  *p_arg)
               *ptr_data=Encoder_left_Var;
               *(Ptr_RegData+NRegisAdd105) =  (uint16_t)Encoder_right_Var;
               *(Ptr_RegData+NRegisAdd139) = 270;
+              
+              Read_Data_From_Device(0x0f,(uint16_t*)Ptr_RegData+NRegisAdd106);
               
               OSTimeDlyHMSM(0u, 0u, 0u,200u,
                             OS_OPT_TIME_HMSM_STRICT,

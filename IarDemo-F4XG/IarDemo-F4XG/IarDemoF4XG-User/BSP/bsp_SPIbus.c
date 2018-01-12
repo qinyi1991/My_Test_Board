@@ -22,7 +22,7 @@ void BSP_SPI2_Init(void)
     hspi2.Init.CLKPolarity = SPI_POLARITY_HIGH;
     hspi2.Init.CLKPhase = SPI_PHASE_2EDGE;
     hspi2.Init.NSS = SPI_NSS_HARD_OUTPUT;
-    hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+    hspi2.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_256;
     hspi2.Init.FirstBit = SPI_FIRSTBIT_MSB;
     hspi2.Init.TIMode = SPI_TIMODE_DISABLE;
     hspi2.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
@@ -187,7 +187,7 @@ void SPIInput(uint16_t Tdata)
      while( __HAL_SPI_GET_FLAG(&hspi2,SPI_FLAG_RXNE)  == RESET);
 }
                        
-////SPI读写参数
+//SPI读写参数
 uint16_t SPIWriteWord(uint16_t Tdata)
 { 
       uint16_t receivedbyte = 0;
